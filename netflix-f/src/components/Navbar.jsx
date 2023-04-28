@@ -26,15 +26,12 @@ export default function Navbar({ isScrolled }) {
       })
 
     return (
-        <Container>
-            <nav open={open} className={`flex ${isScrolled ? 'scrolled' : ''}`}>
+        <Container open={open} >
+            <nav className={`flex ${isScrolled ? 'scrolled' : ''}`}>
                 <div className="left flex a-center" >
                     <div className="brand flex a-center j-center">
                         <img src={logo} alt="logo" />
                     </div>
-                    <MContainer>
-                        <FaBars />
-                    </MContainer>
                     <ul className="flex links">
                         {
                             links.map(({ name, link }) => {
@@ -66,6 +63,9 @@ export default function Navbar({ isScrolled }) {
                         <FaPowerOff />
                     </button>
                 </div>
+                <MContainer onClick={() => setOpen(!open)}>
+                        <FaBars />
+                    </MContainer>
             </nav>
         </Container>
     )
@@ -76,6 +76,25 @@ const Container = styled.div`
         background-color: black;
     }
     nav{
+        @media screen and (max-width: 960px) {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0.5rem;
+            transition: 0.5 all ease;
+            .links{
+                position: absolute;
+                background-color: black;
+                border: 1px solid red;
+                padding: 20px;
+                display: flex;
+                margin-top: 350px;
+                left: ${({open}) => open ? '0' : '-100%'};
+                width: 100%;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
         position: sticky;
         top :0;
         height: 6.5rem; 

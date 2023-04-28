@@ -53,6 +53,7 @@ export default function Netflix() {
 }
 
 const Container = styled.div`
+
   background-color: black;
   .hero{
     position: relative;
@@ -93,6 +94,47 @@ const Container = styled.div`
           color: white;
           svg{
             font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 980px){
+    .hero{
+      img{
+        height: 75vh;
+      }
+      .container{
+        position: absolute;
+        bottom: 2.8rem;
+        img{
+          height: 70%;
+          width: 70%;
+          margin-left: 5rem;
+        }
+        .buttons{
+          margin: 2.8rem;
+          gap: 1rem;
+          button{
+            font-size: 1rem;
+            gap: 1rem;
+            border-radius: 0.2rem;
+            padding: 0.2rem;
+            padding-left: 1rem;
+            padding-right: 1.4rem;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            &:hover{
+              opacity: 0.8;
+            }
+            &:nth-of-type(2){
+              background-color: rgba(109, 109, 110, 0.7);
+              color: white;
+              svg{
+                font-size: 1.2rem;
+              }
+            }
           }
         }
       }
