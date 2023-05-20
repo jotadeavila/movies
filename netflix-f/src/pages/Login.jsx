@@ -44,7 +44,7 @@ export default function Login() {
                 onChange={(e) => setFormValues({ ...formValues, [e.target.name]: e.target.value })} />
               <input type="password" placeholder='Contraseña' name='password' value={formValues.password}
                 onChange={(e) => setFormValues({ ...formValues, [e.target.name]: e.target.value })} />
-              <button onClick={handleLogIn}>Log In</button>
+              <button onClick={handleLogIn}>Iniciar</button>
 
             </div>
           </div>

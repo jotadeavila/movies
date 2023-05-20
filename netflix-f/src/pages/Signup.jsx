@@ -41,19 +41,19 @@ export default function Signup() {
                         <h6>¿Listo para mirar? Ingrese su correo electrónico para crear o reiniciar la membresía</h6>
                     </div>
                     <div className="form">
-                        <input type="email" placeholder='Email Address' name='email' value={formValues.email} 
+                        <input type="email" placeholder='Email' name='email' value={formValues.email} 
                         onChange={(e)=>setFormValues({...formValues, [e.target.name]: e.target.value})}/>
                         {
-                            showPassword && <input type="password" placeholder='Password' name='password' value={formValues.password} 
+                            showPassword && <input type="password" placeholder='Contraseña' name='password' value={formValues.password} 
                             onChange={(e)=>setFormValues({...formValues, [e.target.name]: e.target.value})}/>
                         }
                         
                         {
-                            !showPassword && <button onClick={()=>setShowPassword(true)}>Get started</button>
+                            !showPassword && <button onClick={()=>setShowPassword(true)}>Adelante</button>
                         }
                         
                     </div>
-                    <button onClick={handleSignup}>Sign Up</button>
+                    <button onClick={handleSignup}>Registrar</button>
                 </div>
             </div>
         </Container>
