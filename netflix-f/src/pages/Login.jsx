@@ -37,12 +37,12 @@ export default function Login() {
         <div className="form-container flex column a-center j-center">
           <div className="form flex column a-center j-center">
             <div className="title">
-              <h3>Log In</h3>
+              <h3>Iniciar sesión</h3>
             </div>
             <div className="container flex column">
-              <input type="email" placeholder='Email Address' name='email' value={formValues.email}
+              <input type="email" placeholder='Email' name='email' value={formValues.email}
                 onChange={(e) => setFormValues({ ...formValues, [e.target.name]: e.target.value })} />
-              <input type="password" placeholder='Password' name='password' value={formValues.password}
+              <input type="password" placeholder='Contraseña' name='password' value={formValues.password}
                 onChange={(e) => setFormValues({ ...formValues, [e.target.name]: e.target.value })} />
               <button onClick={handleLogIn}>Log In</button>
 

@@ -36,9 +36,9 @@ export default function Signup() {
                 <Header />
                 <div className='body flex column a-center j-center'>
                     <div className='text flex column'>
-                        <h1>Unlimited, TV shows and more</h1>
-                        <h4>Watch anywhere, cancel anytime</h4>
-                        <h6>Ready to watch? Enter your email to create or restart membership</h6>
+                        <h1>Ilimitado, programas de TV y más</h1>
+                        <h4>Mire en cualquier lugar, cancele en cualquier momento</h4>
+                        <h6>¿Listo para mirar? Ingrese su correo electrónico para crear o reiniciar la membresía</h6>
                     </div>
                     <div className="form">
                         <input type="email" placeholder='Email Address' name='email' value={formValues.email} 

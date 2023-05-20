@@ -12,8 +12,8 @@ export default function Navbar({ isScrolled }) {
     const links = [
         { name: 'Home', link: '/' },
         { name: 'Tv Shows', link: '/tv' },
-        { name: 'Movies', link: '/movies' },
-        { name: 'My List', link: '/mylist' }
+        { name: 'Peliculas', link: '/movies' },
+        { name: 'Mi Lista', link: '/mylist' }
     ]
 
     const [showSearch, setShowSearch] = useState(false)
